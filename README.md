@@ -7,5 +7,5 @@ Provides convenient bash scripts to setup
 - ecs
 
 
-and resources in aws for machine learning and data engineering projects.
+and other services in aws for machine learning and data engineering projects.
 
