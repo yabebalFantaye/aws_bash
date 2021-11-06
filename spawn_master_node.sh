@@ -5,7 +5,7 @@
 if [ $# -gt 0 ]; then
     name=$1
 else
-    name="10x-trainees"
+    name="pjmatch"
 fi
 if [ $# -gt 1 ]; then
     profile=$2
@@ -15,17 +15,20 @@ fi
 
 
 echo "name=$name, profile=$profile"
-team="b4trainees"
+team="pjmatch"
 ec2="yes"
 
 # == often change ==
 TYPE="c5.4xlarge"   # EC2 instance type
 
+# == security
+#IAM="B4EC2Role" # EC2 IAM role name
+IAM="Ec2InstanceWithFullAdminAccess"
+
 # ==  set it once and seldom change ==
 SG="sg-0606253fdd87db25e"  # security group ID
 KEY="tech-ds-team"     # EC2 key pair name
 COUNT=1         # how many instances to launch
-IAM="B4EC2Role" # EC2 IAM role name
 EBS_SIZE=150    # root EBS volume size (GB)
 
 #=== networking === 
