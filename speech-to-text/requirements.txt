@@ -1,0 +1,64 @@
+##### Gerneric useful packages
+flask
+google-cloud-storage
+jupyter
+pytest
+tqdm
+wget
+apache-airflow
+dbt
+pyspark
+
+
+
+##### Core scientific packages
+#installed already 
+
+
+##### Machine Learning packages
+scikit-learn==0.24.1
+
+# Optional: the XGBoost library is only used in chapter 7
+xgboost==1.3.3
+
+##### TensorFlow-related packages
+
+# If you want to use a GPU, it must have CUDA Compute Capability 3.5 or
+# higher support, and you must install CUDA, cuDNN and more: see
+# tensorflow.org for the detailed installation instructions.
+
+tensorflow-gpu>=1.6.0 #  or tensorflow-gpu>=1.6.0 for CPU only
+
+#### facebook package to dynamically create a hierarchical configuration
+#### by composition and override it through config files
+hydra-core
+
+#### audio manipulation package
+librosa
+
+### Hyperparameter optimisation tool 
+optuna
+
+##### Image manipulation
+Pillow==8.2.0
+graphviz==0.16
+pyglet==1.5.0
+scikit-image==0.18.1
+
+##### Additional utilities
+
+# Efficient jobs (caching, parallelism, persistence)
+joblib==0.14.1
+
+# Nice utility to diff Jupyter Notebooks.
+nbdime==2.1.0
+
+# May be useful with Pandas for complex "where" clauses (e.g., Pandas
+# tutorial).
+numexpr==2.7.2
+
+# Optional: these libraries can be useful in the classification chapter,
+# exercise 4.
+nltk==3.5
+urlextract==1.2.0
+
